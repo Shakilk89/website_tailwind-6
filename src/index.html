@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" defer/>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="/dist/all.min.css">
+    <link rel="stylesheet" href="/dist/fontawesome.min.css">
+    <!-- Dist -->
+    <link rel="stylesheet" href="/dist/output.css">
+
+    
+
+</head>
+<body>
+
+    <section id="menuBar" class="py-11">
+        <div class="flex justify-center items-center">
+            <h1 class="font-bold">Menu Bar</h1>
+        </div>
+    </section>
+
+    <section id="Home" class="bg-[#040809]">
+        <div class="w-full lg:h-screen lg:bg-contain bg-cover bg-no-repeat bg-center lg:bg-left sm:bg-left-top z-20" style="background-image: url(/img/bg-pic.png);" >
+           <div class="container h-full flex items-center justify-end">
+                <div class="flex flex-col items-center sm:gap-8 max-w-[47rem] lg:p-6 mx-4 md:mx-0">
+                    <h1 class="text-white lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-regular tracking-wide">
+                        Learn how to Unleash the Power of Digital Innovation
+                    </h1>
+                    <div class=" grid md:grid-cols-5 grid-cols-1 gap-8 md:gap-0">
+                        <div class="col-span-2">
+                            <p class="md:text-lg text-white md:tracking-wide leading-relaxed">
+                                Digital transformation is essential for success in today's fast-paced business landscape, yet many organisations struggle with data literacy. Don't be left behind but join this unique masterclass.
+                            </p>
+                        </div>
+                        <div class="col-span-3 md:pl-16">
+                            <form action="#" class="flex flex-col gap-4">
+                                <input type="text" id="username" placeholder="First name" 
+                                    class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                                
+                                <input type="email" id="emailAdd" placeholder="Email Address" 
+                                    class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                                
+                                <div class="pr-3">
+                                    <button type="submit" id="joinMaster"
+                                        class="duration-500 text-[16px] mt-2 sm:mt-4 bg-[#30FFEB] border-[#30FFEB] hover:bg-transparent hover:text-[#30FFEB]  hover:border-[#30FFEB] border-2 text-black px-2 xl:px-6 py-2 rounded-full font-medium">
+                                        JOIN THE MASTERCLASS NOW
+                                    </button>
+                                    <p class="text-white pr-6 mt-6">
+                                        Dr Mark van Rijmenam already <br> inspired 
+                                        <span class="font-semibold text-white">>100.000</span> leaders  across
+                                        <span class="text-white lg:block inline-block font-semibold">> 25 countries</span> 
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- =====Join Master Popup start===== -->
+                        <!-- =====Join Master Popup start===== -->
+                        <div id="join" class="hidden">
+                            <div class="md:w-7/12 w-64 md:h-72 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                                <div id="closeMenu" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                                    <i class="fas fa-times"></i>
+                                </div>
+
+                                <div class="lg:flex justify-center lg:mt-10 md:mt-4 mt-2 lg:pl-10 p-3">
+                                    <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl md:text-base text-xs text-white">
+                                        Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                                    </p>
+                            
+                                    <form class="w-1/2 p-6 lg:space-y-6">
+                                        <input type="text" id="username" placeholder="First name" 
+                                            class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                                
+                                        <input type="email" id="emailAdd" placeholder="Email Address" 
+                                            class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                                        <div class="relative">
+                                            <button class="bg-secondary lg:mb-8 mt-2 lg:mt-0 px-8 lg:py-3 py-2 rounded-full text-base text-black font-bold hover:opacity-80 ease-in duration-200 absolute right-4">
+                                                <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- =====Join Master Popup end===== -->
+                    </div>
+              </div>
+           </div>
+        </div>
+    </section>
+
+    <section id="stars" class="bg-bg-black py-20">
+        <div class="container mx-auto">
+            <!-- =====Rating Start===== -->
+            <div class="grid md:grid-cols-3 justify-items-center space-y-10 md:space-y-0">
+                <div class="space-y-4">
+                    <div class="flex gap-1 text-3xl text-secondary">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white flex justify-center text-xl">Thought-Provoking</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex gap-1 text-3xl text-secondary">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white flex justify-center text-xl">Great content</p>
+                </div>
+                
+
+                <div class="space-y-4">
+                    <div class="flex gap-1 text-3xl text-secondary">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white flex justify-center text-xl">State-of-the art</p>
+                </div>
+            </div>
+            <!-- =====Rating end===== -->
+
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <img class="xl:w-[56rem] lg:w-[55rem] md:w-[40rem] sm:w-96 w-60 xl:h-[32rem] lg:h-96 md:h-60 h-32 mt-40 grid rounded-3xl " src="/img/card-images-1.webp" alt="">
+                    <img class="lg:w-24 w-10 absolute lg:-left-14 -left-6 lg:bottom-14 bottom-3" src="/img/Polygon 1.png" alt="">
+                </div>
+            </div>
+
+            <div class="grid py-20 relative">
+                <button id="joinBar" class="m-auto bg-secondary px-6 py-2 rounded-full capitalize sm:text-xl text-black font-normal border-2 hover:border-white  hover:bg-black hover:text-secondary hover:opacity-80 ease-in duration-200">JOIN THE <br> MASTERCLASS</button>
+
+                <!-- =====Join Master Popup start===== -->
+                <!-- =====Join Master Popup start===== -->
+                <div id="join1" class="hidden">
+                    <div class="md:w-7/12 w-64 md:h-72 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                        <div id="closeMenu1" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="lg:flex justify-center lg:mt-10 md:mt-4 mt-2 lg:pl-10 p-3">
+                            <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl md:text-base text-xs text-white">
+                                Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                            </p>
+                    
+                            <form class="w-1/2 p-6 lg:space-y-6">
+                                <input type="text" id="username" placeholder="First name" 
+                                    class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                        
+                                <input type="email" id="emailAdd" placeholder="Email Address" 
+                                    class="text-white lg:text-xl font-WorkSans bg-transparent focus:outline-none p-2 border border-b-2 hover:border-b-[#30FFEB]  focus:border-b-[#30FFEB] border-b-white border-r-0 border-t-0 border-l-0">
+                                <div class="relative">
+                                    <button class="bg-secondary lg:mb-8 mt-2 lg:mt-0 px-8 lg:py-3 py-2 rounded-full text-base text-black font-bold hover:opacity-80 ease-in duration-200 absolute right-4">
+                                        <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- =====Join Master Popup end===== -->    
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="futureBusiness" class="bg-bg-black">
+        <div class="pt-10 space-y-20">
+            <div class="space-y-6 font-WorkSans grid mx-4 sm:mx-0">
+                <h1 class="lg:text-3xl sm:text-xl m-auto text-white">Transform your organization :</h1>
+                <h1 class="lg:text-5xl sm:text-3xl text-xl m-auto pt-4 text-white">Future of Business Masterclass</h1>
+                <span class="xl:text-2xl sm:lg:text-xl text-sm text- m-auto text-secondary cursor-pointer">Click here to view what is covered in this unique digital course, which is updated regularly.</span>
+            </div>
+
+            <div class="grid lg:grid-cols-2 space-y-8 lg:space-y-0 mt-8">
+                <img class="sm:w-full w-64 sm:h-[28rem] h-72 ml-auto mr-auto lg:ml-0 lg:mr-0" class="" src="/img/Rectangle 16.png" alt="">
+
+                <div class="sm:w-full sm:h-[28rem] text-white">
+                    <p class="sm:p-20 mx-4 sm:mx-0 m-auto sm:text-3xl leading-snug tracking-normal font-WorkSans">Join <span class="text-secondary">Dr. Mark van Rijmenam</span>, The Digital Speaker, as he shares the game-changing insights that have empowered Fortune 500 companies and other organizations to thrive in the digital era.</p>
+                </div>
+                
+                <div class="sm:w-full sm:h-[32rem] text-white text-end">
+                    <p class="sm:px-20 lg:p-20 mx-4 sm:mx-0 sm:text-3xl leading-snug tracking-normal font-WorkSans m-auto">In today's fast-paced business landscape, digital transformation is not just essential—it's the key to survival. <br><br> Yet many organisations struggle with data literacy and innovation.</p>
+                </div>
+
+                <div class="sm:w-full w-64 sm:h-[32rem] h-72 group ml-auto mr-auto lg:ml-0 lg:mr-0 relative bg-cover bg-secondary lg:pt-48 lg:pb-24 md:p-20 p-9">
+                    <div class="text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <p class="md:text-2xl sm:text-xl text-xs font-medium group-hover:text-white">
+                            JOIN THIS ONE-OF-A-KIND MASTERCLASS TODAY
+                        </p>
+                    </div>
+
+                    <div class="bg-cover duration-500 opacity-0 group-hover:opacity-[100%] group-hover:z-[1] absolute top-0 bottom-0 left-0 sm:w-full w-64 sm:h-[32rem] h-72 object-cover" style="background-image: url(https://www.thedigitalspeaker.com/assets/images/masterclass/gradient-background.webp?v=1615e29119);">
+                        <div class="text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                            <p class="md:text-2xl sm:text-xl text-xs font-medium text-white">JOIN THIS ONE-OF-A-KIND MASTERCLASS TODAY</p>
+                            <p class="sm:text-xl italic pt-20 text-white ">Don't be left behind!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="sm:w-full w-64 sm:h-[32rem] h-72 ml-auto mr-auto sm:ml-0 sm:mr-0" src="/img/Rectangle 20.png" alt="">
+
+                <div class="sm:w-full sm:h-[28rem] text-white">
+                    <p class="sm:p-20 mx-4 sm:mx-0 sm:text-3xl leading-snug tracking-tight font-WorkSans m-auto">This masterclass will provide you with a deep understanding of digital transformation and the implications of new technologies, helping your organisation develop a culture of innovation and adaptability to stay ahead of the competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="digitalAge" class="bg-white py-20">
+        <div class="container mx-auto">
+            <div class="sm:space-y-20 space-y-10">
+                <div class="font-WorkSans sm:ml-20 ml-10">
+                    <h1 class="lg:text-5xl md:text-3xl sm:text-xl text-sm font-bold md:font-normal">Stay Ahead in</h1>
+                    <h1 class="lg:text-5xl md:text-3xl sm:text-xl text-sm font-bold md:font-normal md:indent-28 indent-4">the Digital Age</h1>
+                    <p class="sm:text-xl text-xs sm:mt-16 mt-8">Digital transformation is <br> essential for success in today's <br> fast-paced business landscape</p>
+                </div>
+    
+                <div class="grid gap-4 relative w-full">
+                    <img class="m-auto w-2/3 h-10/12" src="/img/graph.svg" alt="">
+                    <!-- =====Join Master Popup start===== -->
+                    <!-- =====Join Master Popup start===== -->
+                    <div id="join2" class="hidden z-10">
+                        <div class="md:w-7/12 md:h-72 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                            <div id="closeMenu2" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                                <i class="fas fa-times"></i>
+                            </div>
+    
+                            <div class="md:flex justify-center md:mt-10 mt-4 lg:pl-10 p-3">
+                                <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl text-base text-white">
+                                    Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                                </p>
+                        
+                                <form class="w-1/2 p-6 space-y-8">
+                                    <input type="text" id="username" placeholder="Username" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                                    <input type="email" id="emailAdd" placeholder="Email Address" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                                    <div class="relative">
+                                        <button class="bg-secondary mb-8 px-8 py-3 rounded-full text-base text-black font-bold border border-black hover:bg-white hover:text-secondary ease-in duration-200 absolute right-4">
+                                            <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =====Join Master Popup end===== -->   
+                    
+                    
+
+                    <div class="space-y-4 ml-auto mr-auto sm:ml-0 sm:mr-0 sm:absolute xl:top-[35rem] lg:top-[28rem] md:top-80 top-72 xl:left-[50rem] lg:left-[40rem] md:left-[33rem] left-[25rem]">
+                        <button id="joinNow" class="bg-secondary  px-14 sm:py-2 rounded-full capitalize sm:text-xl text-black font-normal border-2 border-black hover:bg-white hover:text-secondary hover:opacity-100 ease-in duration-200">JOIN NOW</button>
+                        <p class="font-WorkSans font-semibold text-base text-center">Money-Back Guarantee: <br> <small>Value Assured or Your Money Back</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="riskFree" class="sm:mt-20">
+        <div class="font-WorkSan relative">
+            <img class="w-full h-screen" src="/img/Future-of-Business-masterclass 1.png" alt="">
+            <div class="absolute sm:left-20 top-20 space-y-6 font-WorkSans text-white mx-4 sm:mx-0">
+                <h1 class="md:text-6xl sm:text-5xl text-2xl">
+                    Experience the<br><span class="whitespace-pre">   Value Risk-Free</span>
+                </h1>
+              
+                <p class="md:max-w-xl sm:text-2xl text-base tracking-normal">
+                    If you're interested but unsure whether this program is the right fit for you, we're offering a 
+                    30-minute webinar, at no cost, exploring how to prepare your organisation for the future of work. 
+                    Simply provide your contact details to gain instant access to this informative session. 
+                    We stand by the quality and value of our masterclass and offer a money-back guarantee if the 
+                    program doesn't meet your expectations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="digitalRevalution" class="bg-bg-black py-10">
+        <div class="container mx-auto">
+             <div class="relative">
+                 <!-- =====Join Master Popup start===== -->
+                 <!-- =====Join Master Popup start===== -->
+                 <div id="join3" class="hidden z-20 ">
+                     <div class="md:w-7/12 sm:w-96 w-64 md:h-72 absolute top-0 right-3 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                         <div id="closeMenu3" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                             <i class="fas fa-times"></i>
+                         </div>
+    
+                         <div class="md:flex justify-center md:mt-10 mt-4 lg:pl-10 p-3">
+                             <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl text-base text-white">
+                                 Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                             </p>
+                     
+                             <form class="w-1/2 p-6 space-y-8">
+                                 <input type="text" id="username" placeholder="Username" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                                 <input type="email" id="emailAdd" placeholder="Email Address" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                                 <div class="relative">
+                                     <button class="bg-secondary mb-8 px-8 py-3 rounded-full text-base text-black font-bold hover:opacity-80 ease-in duration-200 absolute right-4">
+                                         <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                     </button>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- =====Join Master Popup end===== -->
+    
+                 <div class="grid lg:grid-cols-2 gap-4 space-y-10 lg:space-y-0 py-10">
+                     <div class="text-white">
+                         <h1 class="font-WorkSans sm:text-5xl tracking-wider leading-snug px-10 ">Are you prepared to lead your organization through <span class="text-secondary">the digital revolution?</span></h1>
+                     </div>
+                     <div class="mx-4 md:mx-0 space-y-12">
+                         <p class="text-white font-WorkSans sm:text-3xl tracking-normal leading-snug">
+                             Over the years, renowned keynote speaker <strong>Dr Mark van Rijmenam</strong> has captivated audiences worldwide. 
+                             Now, his invaluable expertise is accessible as a one-of-a-kind on-demand masterclass.
+                         </p>
+             
+                         <button id="joinThe" class="bg-black px-6 py-2 rounded-full capitalize sm:text-xl text-secondary font-normal border-2 border-white hover:border-none  hover:bg-secondary hover:text-black hover:opacity-80 ease-in duration-200">JOIN THE MASTERCLASS</button>
+                     </div>
+                 </div>
+             </div>
+        </div>
+     </section>
+
+    <section id="digitalRevalutionNext" class="pb-">
+        <div class="md:hidden">
+            <img class="w-full h-96" src="/img/BE8A2597 1.png" alt="">
+        </div>
+        <div class="w-full h-[28rem]" style="background-image: url(/img/BE8A2597\ 1.png);">
+            <div class="lg:w-1/2 w-full h-[28rem] bg-dang opacity-90">
+                <p class="font-WorkSans text-white sm:text-xl text-lg leading-normal sm:pt-32 pt-10 sm:px-20 mx-4 sm:mx-0">
+                    Participants can receive complimentary access to strategic consultancy via email, 
+                    enabling you to ask questions and receive guidance on implementing your newfound knowledge from a 
+                    world-renowned expert. You'll have a direct line to Dr. Van Rijmenam to ensure you're equipped 
+                    to drive change in your organisation effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessible" class="bg-bg-black">
+        <div class="container mx-auto py-10 w-full h-auto flex justify-center items-center relative">
+            <div class="sm:w-[34rem] w-[30rem] sm:h-[34rem] h-[30rem] sm:rounded-full bg-dang grid place-content-center sm:space-y-8 mx-4 sm:mx-0">
+                <h2 class="sm:w-5/6 text-white text-center sm:text-2xl text-base m-auto">
+                    "Extremely thought provoking! Brilliant keynote from @VanRijmenam talking about Blockchain, 
+                    Big Data and AI."
+                </h2>
+                <h4 class="text-center mt-4 sm:text-base text-xs">
+                    <small class="text-white">
+                        Jelmer de Vos, <br> Head of PSA University
+                    </small>
+                </h4>
+            </div>
+    
+            <button id="joinSo" class="absolute sm:top-10 top-2 right-10 bg-black hover:bg-secondary lg:px-6 px-3 lg:py-3 sm:py-2 py-1 rounded-full capitalize lg:text-xl text-xs text-secondary hover:text-black border-2 border-white hover:border-none font-normal hover:opacity-80 ease-in duration-200">JOIN THE MASTERCLASS</button>
+    
+            <!-- =====Join Master Popup start===== -->
+            <!-- =====Join Master Popup start===== -->
+            <div id="join4" class="hidden z-10">
+                <div class="md:w-7/12 md:h-72 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                    <div id="closeMenu4" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                        <i class="fas fa-times"></i>
+                    </div>
+    
+                    <div class="md:flex justify-center md:mt-10 mt-4 lg:pl-10 p-3">
+                        <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl text-base text-white">
+                            Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                        </p>
+                
+                        <form class="w-1/2 p-6 space-y-8">
+                            <input type="text" id="username" placeholder="Username" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                            <input type="email" id="emailAdd" placeholder="Email Address" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                            <div class="relative">
+                                <button class="bg-secondary mb-8 px-8 py-3 rounded-full text-base text-black font-bold hover:opacity-80 ease-in duration-200 absolute right-4">
+                                    <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- =====Join Master Popup end===== -->          
+        </div>
+    </section>
+
+    <section id="flexiblePrice" class="py-20">
+        <div class="relative">
+            <!-- =====Join Master Popup start===== -->
+            <!-- =====Join Master Popup start===== -->
+            <div id="join5" class="hidden z-10">
+                <div class="md:w-7/12 md:h-72 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:space-x-6 bg-black border border-solid border-white rounded-2xl">
+                    <div id="closeMenu5" class="text-white text-lg cursor-pointer absolute top-2 right-5">
+                        <i class="fas fa-times"></i>
+                    </div>
+    
+                    <div class="md:flex justify-center md:mt-10 mt-4 lg:pl-10 p-3">
+                        <p class="lg:w-1/2 font-WorkSans font-normal xl:text-2xl lg:text-xl text-base text-white">
+                            Join <span class="text-secondary">Dr. Mark van Rijmenam’s</span> masterclass to learn the key insights that have empowered organizations to thrive in the digital era
+                        </p>
+                
+                        <form class="w-1/2 p-6 space-y-8">
+                            <input type="text" id="username" placeholder="Username" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                            <input type="email" id="emailAdd" placeholder="Email Address" class="lg:w-52 text-white xl:text-2xl font-WorkSans bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0">
+                            <div class="relative">
+                                <button class="bg-secondary mb-8 px-8 py-3 rounded-full text-base text-black font-bold hover:opacity-80 ease-in duration-200 absolute right-4">
+                                    <img class="w-24 text-black" src="/img/Arrow black 2.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- =====Join Master Popup end===== -->   
+    
+            <div class="h-auto grid md:grid-cols-2 gap-4">
+                <div class="m-auto">
+                    <img class="p-4" src="/img/pricing-bg.webp" alt="">
+                </div>
+    
+                <div class="text-black font-WorkSans space-y-6 sm:ml-20 mx-6 sm:mx-0">
+                    <h1 class="lg:text-4xl sm:text-2xl xl:tracking-wider font-medium">Flexible Pricing Options <br> for Maximum Impact</h1>
+                    
+                    <p class="w-9/12 lg:text-xl sm:text-lg text-sm font-normal">
+                        Choose from three distinct packages designed to cater to various needs, 
+                        including monthly subscriptions that can be cancelled at any time. Interested in purchasing 
+                        the masterclass for your department or entire organisation? Contact us for more information 
+                        on our bulk options, which can amplify the benefits across your entire organisation, 
+                        driving transformative change and ensuring your teams are equipped for success.
+                    </p>
+    
+                    <button id="register" class="bg-secondary hover:bg-white lg:px-6 px-3 lg:py-3 sm:py-2 py-1 rounded-full capitalize lg:text-xl text-xs text-black border-2 border-black font-normal hover:opacity-80 ease-in duration-200">REGISTER NOW</button>
+    
+                    <h3><strong>Money-Back Guarantee:</strong> Value Assured or Your Money Back</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-offWhite lg:px-20 py-20">
+        <div class="container mx-auto">
+            <div class="relative space-y-10">
+                <div class="font-WorkSans space-y-6 mx-4 sm:mx-0">
+                    <h1 class="xl:text-6xl md:text-4xl sm:text-3xl text-xl tracking-wide md:font-normal">
+                        Pricing Options for the Future 
+                        <span class="sm:whitespace-pre leading-normal">         of Business Masterclass</span>
+                    </h1>
+            
+                    <p class="sm:text-2xl text-base">
+                        We provide three distinct packages to cater to various needs. Our monthly subscriptions 
+                        can be cancelled at any time, offering flexibility and convenience. 
+                        If you're interested in purchasing the masterclass for your department 
+                        or entire organization, we also offer bulk options. For more information on these tailored 
+                        solutions, please don't hesitate to contact us.
+                    </p>
+                </div>
+    
+                <div class=" ">
+                    <div class="xl:grid xl:grid-cols-3 xl:gap-24">
+                        <div class="md:space-y-6 space-y-2 hidden xl:block">
+                            <div class="sm:w-80 w-60 h-[30rem] border border-solid border-black rounded-xl">
+                                <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 px-20 grid place-content-center">
+                                    $99/month
+                                </div>
+                                
+                                <ul class="list-inside list-image-vector ml-4">
+                                    <li class="mt-4 text-xl">Unlimited access to all sessions</li>
+                                </ul>
+                            </div>
+                            <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                        </div>
+            
+                        <div class="md:space-y-6 space-y-2 hidden xl:block">
+                            <div class="sm:w-80 w-60 h-[30rem] border border-solid border-black rounded-xl">
+                                <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 px-20 grid place-content-center">
+                                    $399/month
+                                </div>
+                               
+                                <ul class="list-inside list-image-vector ml-4 sm:text-xl text-lg space-y-4">
+                                    <li class="mt-4">Unlimited access to all sessions</li>
+                                    <li>Free of charge, three email consultations related to the future of business.</li>
+                                    <li>A free hard copy of the books <span class="underline">Step into the Metaverse, The Organization of Tomorrow, and Blockchain.</span> </li>
+                                    <li>Access to a monthly AMA 60-minute webinar</li>
+                                </ul>
+                            </div>
+                            <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                        </div>
+            
+                        <div class="md:space-y-6 space-y-2 hidden xl:block">
+                            <div class="sm:w-80 w-60 h-[50rem] border border-solid border-black rounded-xl">
+                                <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 px-20 grid place-content-center">
+                                    $999/month
+                                </div>
+    
+                                <ul class="list-inside list-image-vector ml-4 sm:text-xl text-base space-y-4">
+                                    <li class="mt-4">Unlimited access to all sessions</li>
+                                    <li>Free of charge, unlimited (fair-use policy) email consultation related to the future of business.</li>
+                                    <li>A free hard copy of the books <span class="underline">Step into the Metaverse, The Organization of Tomorrow, and Blockchain.</span> </li>
+                                    <li>Access to a monthly AMA 60-minute webinar</li>
+                                    <li>The opportunity to book a one-hour, free-of-charge, online video consultation per month to assist in your learning experience.</li>
+                                    <li>A monthly report with the latest developments in emerging technologies related to your field of expertise.</li>
+                                </ul>
+                            </div>
+                            <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper mySwiper1 xl:hidden md:w-[35rem] sm:w-[28rem] w-64 h-auto">
+                        <div class="swiper-wrapper flex w-full h-auto">
+                            <div class="swiper-slide md:space-y-6 space-y-2 m-auto">
+                                <div class="md:w-[35rem] sm:w-[28rem] w-64 h-auto border border-solid border-black rounded-xl">
+                                    <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 grid place-content-center">
+                                        $99/month
+                                    </div>
+                                    
+                                    <ul class="list-inside list-image-vector ml-4">
+                                        <li class="mt-4 text-xl">Unlimited access to all sessions</li>
+                                    </ul>
+                                </div>
+                                <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                            </div>
+                
+                            <div class="swiper-slide md:space-y-6 space-y-2 m-auto">
+                                <div class="md:w-[35rem] sm:w-[28rem] w-64 h-auto border border-solid border-black rounded-xl">
+                                    <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 grid place-content-center">
+                                        $399/month
+                                    </div>
+                                   
+                                    <ul class="list-inside list-image-vector ml-4 sm:text-xl text-lg space-y-4">
+                                        <li class="mt-4">Unlimited access to all sessions</li>
+                                        <li>Free of charge, three email consultations related to the future of business.</li>
+                                        <li>A free hard copy of the books <span class="underline">Step into the Metaverse, The Organization of Tomorrow, and Blockchain.</span> </li>
+                                        <li>Access to a monthly AMA 60-minute webinar</li>
+                                    </ul>
+                                </div>
+                                <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                            </div>
+                
+                            <div class="swiper-slide md:space-y-6 space-y-2 m-auto">
+                                <div class="md:w-[35rem] sm:w-[28rem] w-64 h-auto border border-solid border-black rounded-xl">
+                                    <div class="bg-black text-white font-WorkSans font-medium rounded-t-xl rounded-bl-xl py-4 grid place-content-center">
+                                        $999/month
+                                    </div>
+        
+                                    <ul class="list-inside list-image-vector ml-4 sm:text-xl text-base space-y-4">
+                                        <li class="mt-4">Unlimited access to all sessions</li>
+                                        <li>Free of charge, unlimited (fair-use policy) email consultation related to the future of business.</li>
+                                        <li>A free hard copy of the books <span class="underline">Step into the Metaverse, The Organization of Tomorrow, and Blockchain.</span> </li>
+                                        <li>Access to a monthly AMA 60-minute webinar</li>
+                                        <li>The opportunity to book a one-hour, free-of-charge, online video consultation per month to assist in your learning experience.</li>
+                                        <li>A monthly report with the latest developments in emerging technologies related to your field of expertise.</li>
+                                    </ul>
+                                </div>
+                                <button class="bg-dang hover:bg-white px-6 py-3 rounded-full capitalize text-xl text-white hover:text-dang border-dang hover:border-2 font-normal hover:opacity-80 ease-in duration-200">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                </div>
+    
+                <div class="w-64 h-64 bg-black rounded-e-full rounded-tl-full flex xl:absolute bottom-0 left-0 mx-4 sm:mx-0">
+                    <h2 id="popUp" class="w-40 text-white text-3xl m-auto">Is this program the right fit <span class="text-secondary">for you?</span></h2>
+                </div>
+    
+                <div id="toolTip" role="tooltip" class="hidden z-20 absolute bottom-0 left-0 sm:w-96 w-64 sm:h-96 h-64 bg-black rounded-e-full rounded-tl-full">
+                    <div class="flex justify-center pt-20">
+                        <div class="space-y-4">
+                            <h2 class="sm:w-72 w-56  text-white text-center font-WorkSans sm:text-base text-xs">If you're interested but unsure whether this program is the right fit for you, we're offering a 30-minute webinar, at no cost, exploring how to prepare your organisation for the future of work.</h2>
+                            <p class="sm:w-72 w-56 font-WorkSans text-white text-center text-xs ">
+                                Simply provide your contact details to gain instant access to this informative session 
+                            </p>
+                            <div class="flex sm:justify-end justify-center">
+                                <img class="bg-dang px-2 py-1" src="/img/Arrow 2.png" alt="">
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="monyBack" class="bg-bg-black sm:px-20">
+        <div class="container mx-auto py-20 space-y-20">
+            <div class="text-white space-y-8 mx-5 sm:mx-0">
+                <div class="">
+                    <h1 class="h-auto lg:text-6xl sm:text-4xl text-lg font-WorkSans font-medium py-2 bg-blue-700 inline-flex">
+                        Money-Back Guarantee:
+                    </h1>
+                    <br>
+                    <h3 class="h-auto lg:text-5xl sm:text-3xl text-sm mt-4 font-WorkSans font-medium py-2 bg-blue-700 inline-flex">
+                        Value Assured or Your Money Back
+                    </h3>
+                </div>
+
+                <p class="w-3/5 h-auto md:text-xl sm:text-base text-sm font-inter font-normal">
+                    Mark stands by the quality and value of our masterclass. If, for any reason, you feel that the 
+                    program did not meet your expectations, contact us within 7 days of completing the course. 
+                    We will promptly refund your investment, no questions asked. Your satisfaction is our top priority, 
+                    and we are committed to delivering exceptional learning experiences.
+                </p>
+            </div>
+    
+            <div class="space-y-8">
+                <h1 class="text-white md:text-4xl sm:text-2xl text-base font-medium font-WorkSans mx-4 sm:mx-0">
+                    What previous clients had to say...
+                </h1>
+                
+                <div class="swiper mySwiper sm:w-full w-64 h-auto">
+                    <div class="swiper-wrapper sm:w-1/2 w-64 h-auto">
+                        <div class="swiper-slide lg:flex justify-center items-center lg:space-x-4 space-y-6 lg:space-y-0 transition-all ease-in duration-200">
+                            <img src="/img/Ellipse 18.png" alt="">
+                            <div class="sm:w-96 w-64 h-auto">
+                                <p class="lg:w-full sm:w-48 w-24 h-auto font-WorkSans font-medium lg:text-xl text-base text- text-white">
+                                    “World-class inspirational. His presentation and insight in the discussion after was world-class inspirational.”
+                                </p>
+                                <br>
+                                <span class="sm:text-sm text-xs text-white">
+                                    Peter Barkman <br> EVP International <br class="sm:hidden"> expansion & CMO
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide lg:flex justify-center items-center lg:space-x-4 space-y-6 lg:space-y-0 transition-all ease-in duration-200">
+                            <img class="" src="/img/Ellipse 19.png" alt="">
+                            <div class="sm:w-96 w-64 h-auto">
+                                <p class="lg:w-full sm:w-48 w-24 h-auto font-WorkSans font-medium lg:text-xl text-base text- text-white">
+                                    “Dr Mark van Rijmenam is simply a rock star! His ability to deliver a well-prepared message in a funny, 
+                                    interesting way and engage everyone in the room is unparalleled in his industry.”
+                                </p>
+                                <br>
+                                <span class="sm:text-sm text-xs text-white">
+                                    Samvel Movsisyan <br> Founder, Leadership <br class="sm:hidden"> School
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide lg:flex justify-center items-center lg:space-x-4 space-y-6 lg:space-y-0 transition-all ease-in duration-200">
+                            <img class="" src="/img/Ellipse 18.png" alt="">
+                            <div class="sm:w-96 w-64 h-auto">
+                                <p class="lg:w-full sm:w-48 w-24 h-auto font-WorkSans font-medium lg:text-xl text-base text- text-white">
+                                    “Dr Mark van Rijmenam is simply a rock star! His ability to deliver a well-prepared message in a funny, 
+                                    interesting way and engage everyone in the room is unparalleled in his industry.”
+                                </p>
+                                <br>
+                                <span class="sm:text-sm text-xs text-white">
+                                    Samvel Movsisyan <br> Founder, Leadership <br class="sm:hidden"> School
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide lg:flex justify-center items-center lg:space-x-4 space-y-6 lg:space-y-0 transition-all ease-in duration-200">
+                            <img class="" src="/img/Ellipse 19.png" alt="">
+                            <div class="sm:w-96 w-64 h-auto">
+                                <p class="lg:w-full sm:w-48 w-24 h-auto font-WorkSans font-medium lg:text-xl text-base text- text-white">
+                                    “World-class inspirational. His presentation and insight in the discussion after was world-class inspirational.”
+                                </p>
+                                <br>
+                                <span class="sm:text-sm text-xs text-white">
+                                    Peter Barkman <br> EVP International <br class="sm:hidden"> expansion & CMO
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+
+// ===== MoneyBack Initialize Swiper
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+// =====Pricing Initialize Swiper
+var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination1",
+        clickable: true,
+      },
+    });
+
+// =====join master
+// =====join master
+window.addEventListener('DOMContentLoaded', () => {
+    const joinMaster = document.querySelector('#joinMaster'); 
+    const join = document.querySelector('#join');
+    const closeMenu = document.querySelector('#closeMenu');
+
+    joinMaster.addEventListener('click', () => {
+        join.classList.remove('hidden');
+    })
+
+    closeMenu.addEventListener('click', () => {
+        join.classList.add('hidden')
+    })
+})
+
+
+// =====joinBar
+// =====joinBar
+window.addEventListener('DOMContentLoaded', () => {
+    const joinBar = document.querySelector('#joinBar'); 
+    const join1 = document.querySelector('#join1');
+    const closeMenu1 = document.querySelector('#closeMenu1');
+
+    joinBar.addEventListener('click', () => {
+        join1.classList.remove('hidden');
+    })
+
+    closeMenu1.addEventListener('click', () => {
+        join1.classList.add('hidden')
+    })
+})
+
+
+// =====joinNow
+// =====joinNow
+window.addEventListener('DOMContentLoaded', () => {
+    const joinNow = document.querySelector('#joinNow'); 
+    const join2 = document.querySelector('#join2');
+    const closeMenu2 = document.querySelector('#closeMenu2');
+
+    joinNow.addEventListener('click', () => {
+        join2.classList.remove('hidden');
+    })
+
+    closeMenu2.addEventListener('click', () => {
+        join2.classList.add('hidden')
+    })
+})
+
+
+// =====joinThe
+// =====joinThe
+window.addEventListener('DOMContentLoaded', () => {
+    const joinThe = document.querySelector('#joinThe'); 
+    const join3 = document.querySelector('#join3');
+    const closeMenu3 = document.querySelector('#closeMenu3');
+
+    joinThe.addEventListener('click', () => {
+        join3.classList.remove('hidden');
+    })
+
+    closeMenu3.addEventListener('click', () => {
+        join3.classList.add('hidden')
+    })
+})
+
+
+// =====joinSo
+// =====joinSo
+window.addEventListener('DOMContentLoaded', () => {
+    const joinSo = document.querySelector('#joinSo'); 
+    const join4 = document.querySelector('#join4');
+    const closeMenu4 = document.querySelector('#closeMenu4');
+
+    joinSo.addEventListener('click', () => {
+        join4.classList.remove('hidden');
+    })
+
+    closeMenu4.addEventListener('click', () => {
+        join4.classList.add('hidden')
+    })
+})
+
+
+// =====Resister
+// =====Resister
+window.addEventListener('DOMContentLoaded', () => {
+    const register = document.querySelector('#register'); 
+    const join5 = document.querySelector('#join5');
+    const closeMenu5 = document.querySelector('#closeMenu5');
+
+    register.addEventListener('click', () => {
+        join5.classList.remove('hidden');
+    })
+
+    closeMenu5.addEventListener('click', () => {
+        join5.classList.add('hidden')
+    })
+})
+
+
+// =====Popup
+// =====Popup
+window.addEventListener('DOMContentLoaded', () => {
+    const popUp = document.querySelector('#popUp'); 
+    const toolTip = document.querySelector('#toolTip');
+
+    popUp.addEventListener('mouseenter', () => {
+        toolTip.classList.remove('hidden');
+    })
+
+    popUp.addEventListener('mouseleave', () => {
+        toolTip.classList.add('hidden');
+    })
+})
+
+
+
+
+</script>
+</body>
+</html>
